@@ -27,7 +27,6 @@ Compressed compressGrayscale(const Image& compress) {
             actualColor = *lineBegin;
         }
     }
-    compressedBitmap.shrink_to_fit();
     return compressedBitmap;
 }
 
