@@ -8,7 +8,7 @@ Compressed compressGrayscale(const Image& compress) {
 
     uint8_t repetitionCounter = 0;
 
-    for (const auto row : compress) {
+    for (const auto& row : compress) {
         repetitionCounter = 1;
         for (auto color = row.begin(); color != row.end(); ++color) {
             auto nextColor = std::next(color);
